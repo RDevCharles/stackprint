@@ -1,11 +1,13 @@
 "use client";
+import BouncingSprite from "./components/BouncingSprite";
+import { BsArrowDownRight } from "react-icons/bs";
 import React, { useState } from "react";
 import Form from "./components/Form";
 import TypewriterText from "./components/TypewriterText";
-import BouncingSprite from "./components/BouncingSprite";
 import { Monofett } from "next/font/google";
 import ResultsCard from "./components/ResultsCard";
-import { BsArrowDownRight } from "react-icons/bs";
+import Header from "./components/Header";
+
 
 const mono = Monofett({ subsets: ["latin"], weight: "400" });
 export default function Home() {
@@ -13,19 +15,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-10 ">
-      <h1 className={`${mono.className}  mb-2 text-4xl ml-4 absolute left-3`}>
-        Print Stack
-      </h1>
-      <h1
-        style={{
-          position: "absolute",
-          right: "1.5%",
-          fontSize: "2rem",
-          marginBottom: "2rem",
-        }}
-      >
-        github
-      </h1>
+      
+      <Header />
+      
       {results.length == 0 ? (
         <>
           <BouncingSprite />
