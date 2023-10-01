@@ -1,37 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Print Stack
 
-## Getting Started
+## deployed link
 
-First, run the development server:
+## About
+Stackprint helps you find the stack you didn't know you needed. It uses Metaphor to organize the web and return helpful information.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Purpose
+As developers, we often get stuck using the same tools over and over again. While repition is great for building products that serve stakeholders well, sometimes we just want to build something new.
+The purpose of Stackprint is to organize the web using AI and return inspiration for your new passion project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tools
+- Metaphor
+- Nextjs
+- Tailwind
+- Axois
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ICEBOX (future improvements):
+Metaphor allows you to grab the content of a returned search result. I'm currently doing research into AI assistents that can be intergrated into this StackPrint and seamlessly parse through the content. In doing so the AI can use a dynamic prompt like "Give this {content} provide me with the code / steps to create{application_description}". 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# stackprint
+Currently, javascript is use for this front facing app. All abstractions will be moved to a server coded in python. This will allow for easier integration with other AI assistants or LLM's.
